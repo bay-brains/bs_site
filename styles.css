@@ -42,8 +42,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
-  height: 96px;
+  padding: 8px 24px;
+  height: 72px;
   position: sticky;
   top: 0;
   backdrop-filter: blur(12px);
@@ -63,9 +63,12 @@ a {
 }
 
 .header-logo img {
-  height: 256px;
+  height: 100%;
+  max-height: none;
   width: auto;
   display: block;
+  transform: scale(1.35);
+  transform-origin: left center;
 }
 
 .nav {
@@ -310,10 +313,10 @@ main {
 
 @media (max-width: 768px) {
   .site-header {
-    height: 72px;
+    height: 56px;
   }
 
   .header-logo img {
-    height: 176px;
+    transform: scale(1.25);
   }
 }
