@@ -55,7 +55,7 @@ a {
 }
 
 .header-logo img {
-  height: 64px;
+  height: 128px;
   width: auto;
   display: block;
 }
@@ -302,6 +302,6 @@ main {
 
 @media (max-width: 768px) {
   .header-logo img {
-    height: 44px;
+    height: 88px;
   }
 }
