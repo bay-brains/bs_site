@@ -42,24 +42,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 7vw;
+  padding: 16px 24px;
   position: sticky;
   top: 0;
   backdrop-filter: blur(12px);
-  background: rgba(246, 242, 234, 0.75);
+  background:
+    radial-gradient(900px 500px at 75% 50%, rgba(248, 208, 160, 0.55) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(900px 500px at 20% 50%, rgba(180, 230, 235, 0.55) 0%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(90deg, #e6f6f7 0%, #f8f8f8 55%, #f8d0a0 100%);
   border-bottom: 1px solid var(--stroke);
   z-index: 10;
 }
 
-.logo {
-  font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.02em;
-}
-
-.logo img {
-  height: 28px;
+.header-logo img {
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -301,5 +297,11 @@ main {
   .site-footer {
     flex-direction: column;
     gap: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-logo img {
+    height: 42px;
   }
 }
